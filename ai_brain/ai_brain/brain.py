@@ -1,16 +1,16 @@
-
 def think(user_input):
-    if "hello" in user_input.lower():
+    text = user_input.lower()
+
+    if "hello" in text:
         return "Hello human 👋"
 
-    elif "your name" in user_input.lower():
+    if "your name" in text:
         return "I am a Hybrid AI Robot"
 
-    elif "move" in user_input.lower():
+    if "move" in text:
         return "COMMAND:MOVE"
 
-    elif "stop" in user_input.lower():
+    if "stop" in text:
         return "COMMAND:STOP"
 
-    else:
-        return "I am learning..."
+    return "I am learning..."
